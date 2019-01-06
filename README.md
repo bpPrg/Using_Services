@@ -39,7 +39,7 @@ wks = gc.open_by_key('0BmgG6nO_6dprxxx')
 wks = gc.open_by_url('https://docs.google.com/spreadsheet/ccc?key=xxxx')
 
 # attributes
-print([ i for i in dir(sh) if not i.startswith('_')])
+print([ i for i in dir(wks) if not i.startswith('_')])
 
 # manipulation
 wks.cell(1, 2).value # index starts from 1 NOT FROM ZERO
