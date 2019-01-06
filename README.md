@@ -35,7 +35,8 @@ gc = gspread.authorize(credentials)
 
 # I have a gsheet called keep_this.gsheet in my google drive
 wks = gc.open("keep_this").sheet1
-wks.get_all_values()
+wks = gc.open_by_key('0BmgG6nO_6dprxxx')
+wks = gc.open_by_url('https://docs.google.com/spreadsheet/ccc?key=xxxx')
 
 # attributes
 print([ i for i in dir(sh) if not i.startswith('_')])
